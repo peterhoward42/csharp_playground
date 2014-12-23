@@ -28,7 +28,7 @@ namespace Linq
                 System.Diagnostics.Debug.Print(i.ToString());
             }
 
-            // Build in sort
+            // Build in sort ordering
             iterable = (from i in aList where ((i % 2) == 0) orderby i descending select i );
             foreach (int i in iterable)
             {
